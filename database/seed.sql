@@ -1,0 +1,27 @@
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8mb4 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+LOCK TABLES `categories` WRITE;
+/*!40000 ALTER TABLE `categories` DISABLE KEYS */;
+INSERT INTO `categories` VALUES (1,'Food & Dining','🍕','expense','2025-12-03 22:07:05','2025-12-13 19:03:37'),(2,'Groceries','🛒','expense','2025-12-03 22:07:05','2025-12-03 22:07:05'),(3,'Transportantion','🚘','expense','2025-12-03 22:07:05','2025-12-03 22:07:05'),(4,'Shopping','🛍️','expense','2025-12-03 22:07:05','2025-12-03 22:07:05'),(5,'Entertainment','🍿','expense','2025-12-03 22:07:05','2025-12-03 22:07:05'),(6,'Utilities','💡','expense','2025-12-03 22:07:05','2025-12-03 22:07:05'),(7,'Rent','🏠','expense','2025-12-03 22:07:05','2025-12-03 22:07:05'),(8,'Subscriptions','🗓️','expense','2025-12-03 22:07:05','2025-12-03 22:07:05'),(9,'Health & Fitness','🏥','expense','2025-12-03 22:07:05','2025-12-03 22:07:05'),(10,'Insurance','🛡️','expense','2025-12-03 22:07:05','2025-12-03 22:07:05'),(11,'Travel','🗺️','expense','2025-12-03 22:07:05','2025-12-03 22:07:05'),(12,'Education','📚','expense','2025-12-03 22:07:05','2025-12-03 22:07:05'),(13,'Home & Maintenance','⚙️','expense','2025-12-03 22:07:05','2025-12-03 22:07:05'),(14,'Pets','🐾','expense','2025-12-03 22:07:05','2025-12-03 22:07:05'),(15,'Taxes','🧾','expense','2025-12-03 22:07:05','2025-12-03 22:07:05'),(16,'Beauty & Personal Care','💆🏻‍♀️','expense','2025-12-03 22:07:05','2025-12-03 22:07:05'),(17,'Other Expenses','💸','expense','2025-12-03 22:07:05','2025-12-03 22:07:05'),(18,'Salary','💼','income','2025-12-03 22:07:05','2025-12-11 22:55:28'),(19,'Side Hustle','💻','income','2025-12-03 22:07:05','2025-12-03 22:07:05'),(20,'Business Income','📈','income','2025-12-03 22:07:05','2025-12-03 22:07:05'),(21,'Refunds','↩️','income','2025-12-03 22:07:05','2025-12-03 22:07:05'),(22,'Rental','🏠','income','2025-12-03 22:07:05','2025-12-11 22:56:57'),(23,'Investment Income','📊','income','2025-12-03 22:07:05','2025-12-03 22:07:05'),(24,'Other Income','💲','income','2025-12-03 22:07:05','2025-12-03 22:07:05');
+/*!40000 ALTER TABLE `categories` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+

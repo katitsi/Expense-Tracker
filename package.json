@@ -1,0 +1,9 @@
+{
+  "name": "expense-tracker",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server",
+    "validation"
+  ]
+}

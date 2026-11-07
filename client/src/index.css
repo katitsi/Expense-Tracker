@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Zalando Sans", sans-serif;
+  --breakpoint-3xl: 1920px;
+  --color-primary: var(--color-emerald-600);
+  --color-primary-light: var(--color-emerald-500);
+  --color-primary-dark: var(--color-emerald-700);
+  --color-secondary: var(--color-indigo-600);
+  --color-secondary-light: var(--color-indigo-500);
+  --color-secondary-dark: var(--color-indigo-700);
+  --color-base: var(--color-gray-700);
+  --color-base-light: var(--color-gray-500);
+  --color-error: var(--color-red-600);
+  --color-success: var(--color-green-500);
+}
+
+@layer base {
+  html {
+    font-family: var(--font-display);
+  }
+
+  body {
+    background-color: #fbfcfb;
+    overflow-x: hidden;
+  }
+}
+
+@layer components {
+  .input-box {
+    @apply w-full flex justify-between text-sm text-black bg-white rounded px-3 py-3 mt-1 mb-2 border border-primary-light shadow-sm transition-all duration-200 hover:border-primary focus-within:border-primary-dark  focus-within:ring-primary/20 focus-within:shadow-lg;
+  }
+
+  .input-box:hover::before {
+    @apply opacity-100;
+  }
+
+  .btn-primary {
+    @apply w-full text-sm font-medium text-white bg-primary shadow-lg shadow-primary/5 p-2.5 rounded-md my-1 hover:bg-primary/15 hover:text-primary;
+  }
+
+  .btn-disabled {
+    @apply w-full text-sm font-medium text-white bg-primary-light/50 p-2.5 rounded-md my-1 cursor-not-allowed;
+  }
+
+  .card {
+    @apply bg-white p-6 rounded-2xl shadow-md shadow-gray-100 border border-gray-200/50;
+  }
+
+  .card-btn {
+    @apply flex items-center gap-3 text-[12px] font-medium text-base hover:text-secondary-dark bg-gray-50 hover:bg-secondary-light/5 px-4 py-1.5 rounded-lg border border-gray-200/50 cursor-pointer;
+  }
+
+  .btn-secodary {
+    @apply flex items-center gap-1.5 text-sm md:text-sm  font-medium text-secondary whitespace-nowrap bg-indigo-50 border border-indigo-50 rounded-lg px-4 py-2 cursor-pointer;
+  }
+
+  .btn-secodary:hover,
+  .btn-secodary:focus {
+    @apply text-indigo-50 bg-secondary;
+  }
+
+  .btn-secodary-fill {
+    @apply text-white bg-secondary-dark;
+  }
+}
