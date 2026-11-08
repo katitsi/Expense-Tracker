@@ -51,7 +51,7 @@ A full-stack personal finance web app for tracking income and expenses, setting 
 ### 1. Clone the repository
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/katitsi/Expense-Tracker.git
 cd Expense-Tracker
 ```
 
