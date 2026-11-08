@@ -8,7 +8,7 @@ export const findIncomeById = async (incomeId, userId) => {
   try {
     const [income] = await db.query(
       "SELECT income_id, category_id, user_id, amount, description, transaction_date FROM incomes WHERE income_id = ? AND user_id = ?",
-      [incomeId, userId]
+      [incomeId, userId],
     );
 
     return income[0] || null;
@@ -256,13 +256,13 @@ export const updateIncomeHelper = async (userId, incomeId, incomeData) => {
   }
 };
 
-//Get total income for the last 12 months
+//Get total income for the last
 export const getTotalIncome = async (userId) => {
   try {
     const query = `
        SELECT COALESCE(SUM(amount),0) AS total_income 
        FROM incomes 
-       WHERE user_id = ? AND transaction_date >= DATE_SUB(CURDATE(), INTERVAL 12 MONTH)`;
+       WHERE user_id = ?`;
     const [result] = await db.query(query, [userId]);
 
     return Number(result[0].total_income);
