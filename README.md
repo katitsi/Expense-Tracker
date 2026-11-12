@@ -22,7 +22,7 @@ A full-stack personal finance web app for tracking income and expenses, setting 
 
 ## Tech Stack
 
-**Frontend**
+### Frontend
 - React 19 
 - Vite 7
 - Tailwind CSS 4
@@ -30,15 +30,15 @@ A full-stack personal finance web app for tracking income and expenses, setting 
 - React Router 7
 - React Hook Form
 - Recharts 
-**Backend**
+### Backend
 - Node.js
 - Express 5
 - JSON Web Tokens (jsonwebtoken)
 - bcrypt
 - mysql2 (MySQL)                               
-**Validation**
+### Validation
 - Zod 4 (shared between client and server)                                         
-**Database**
+### Database
 - MySQL 8 (InnoDB)                                                                 
 
 ## Installation
